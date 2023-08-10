@@ -80,7 +80,7 @@ def update_graph(site-dropdown):
 
 @app.callback(Input(component_id='site-dropdown', component_property='value'),
               Input(component_id='payload-slider', component_property='value'),
-              Output(component_id='success-payload-scatter-chart', component_property='figure))
+              Output(component_id='success-payload-scatter-chart', component_property='figure'))
 # TASK 4: Add a scatter chart to show the correlation between payload and launch success
 def get_scatter_plot(site-dropdown, payload-slider):
     if site-dropdown == 'ALL':
