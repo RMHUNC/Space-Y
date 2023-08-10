@@ -60,8 +60,8 @@ app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
 # TASK 2: Add a pie chart to show the total successful launches count for all sites
 # If a specific launch site was selected, show the Success vs. Failed counts for the site
 def update_graph(site-dropdown):
-    filtered_df=spacex_df
         if site-dropdown == 'ALL':
+            filtered_df=spacex_df
             fig = px.pie(data_frame= filtered_df, values='class', 
             names=site-dropdown, 
             title=f'Total Launches from All Sites')
